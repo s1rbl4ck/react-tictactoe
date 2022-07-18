@@ -1,6 +1,6 @@
 # React TicTacToe with Modern Design
 
-** TicTacToe Demo :**
+### TicTacToe Demo : ###
 > [Let's Play](https://tictactoe-s1rbl4ck.netlify.app/)
 
 ## How to run it
