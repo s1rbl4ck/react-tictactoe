@@ -1,7 +1,7 @@
 # React TicTacToe with Modern Design
 
-## TicTacToe Demo
-[Let's Play](https://tictactoe-s1rbl4ck.netlify.app/)
+** TicTacToe Demo :**
+> [Let's Play](https://tictactoe-s1rbl4ck.netlify.app/)
 
 ## How to run it
 ### `npm start`
