@@ -1,38 +1,120 @@
-.App {
+/* Designed By s1rbl4ck */
+.app {
+  color: var(--textColor);
+}
+/* Game Title */ /* Designed By s1rbl4ck */
+.app .game-title {
+  font-size: var(--titleSize);
   text-align: center;
+  letter-spacing: 12px;
+  word-spacing: -20px;
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Game Line Seperator */ /* Designed By s1rbl4ck */
+.app .game-divider {
+  border-color: var(--blue);
+  margin: var(--boardMargin) var(--boardMargin);
+  border-radius: 5px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Board */ /* Designed By s1rbl4ck */
+.app .board {
+  margin: 0 var(--boardMargin);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Author */ /* Designed By s1rbl4ck */
+.app .author {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 20px 0;
+  text-align: center;
+  font-family: var(--authorFont);
+  font-size: 20px;
+}
+.app .author .author-link {
+  color: var(--blue);
+  font-weight: bold;
+  text-decoration: none;
+  transition: var(--time);
+}
+.app .author .author-link:hover {
+  color: var(--yellow);
+}
+/* Game Status Text */ /* Designed By s1rbl4ck */
+.app .board .game-status {
+  text-align: center;
+  font-size: var(--textStatusSize);
+  letter-spacing: 2px;
+}
+/* Game Player Text */ /* Designed By s1rbl4ck */
+.app .board .game-status .game-player {
+  color: var(--playerTextColor);
+  font-size: var(--textPlayerSize);
+  font-weight: bold;
+}
+/* Board Rows */ /* Designed By s1rbl4ck */
+.app .board .board-rows {
+  margin: var(--boardMargin) 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+/* Board Row */ /* Designed By s1rbl4ck */
+.app .board .board-rows .board-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+/* Square */ /* Designed By s1rbl4ck */
+.app .board .board-rows .board-row .square {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 2px solid var(--boardSquare);
+  color: var(--textColor);
+  box-shadow: var(--squareShadow);
+  font-family: var(--xoFont);
+  font-weight: bold;
+  font-size: 50px;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: var(--boardRadius);
+  transition: var(--time);
+}
+.app .board .board-rows .board-row .square:hover {
+  background-color: var(--boardSquare);
+  color: var(--backgroundColor);
+  box-shadow: var(--hoverSquareShadow);
+}
+.app .board .board-rows .board-row .square:active {
+  box-shadow: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 467px) {
+  .app .game-title {
+    font-size: 32px;
   }
-  to {
-    transform: rotate(360deg);
+  .app .board .board-rows .board-row .square {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+@media only screen and (max-width: 306px) {
+  .app .game-title {
+    font-size: 23px;
+  }
+  .app .game-divider {
+    margin: 15px 25px;
+  }
+  .app .board .game-status {
+    font-size: 16px;
+  }
+  .app .board .game-status .game-player {
+    font-size: 22px;
+  }
+  .app .author {
+    font-size: 16px;
   }
 }
