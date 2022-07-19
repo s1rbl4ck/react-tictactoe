@@ -12,6 +12,10 @@ function App() {
         <a className="author-link" href="https://github.com/s1rbl4ck">
           s1rbl4ck
         </a>
+        &nbsp;-&nbsp;
+        <a className="author-link" href="https://github.com/s1rbl4ck/react-tictactoe">
+          Source Code
+        </a>
       </span>
     </div>
   );
