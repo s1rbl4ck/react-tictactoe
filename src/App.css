@@ -90,6 +90,25 @@
 .app .board .board-rows .board-row .square:active {
   box-shadow: none;
 }
+/* Game Reset Button */
+.app .board .game-reset {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.app .board .game-reset .reset-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: var(--boardRadius);
+  background-color: var(--btnColor);
+  font-size: 23px;
+  font-family: var(--authorFont);
+  cursor: pointer;
+  transition: var(--time);
+}
+.app .board .game-reset .reset-button:hover {
+  background-color: var(--white);
+}
 
 @media only screen and (max-width: 467px) {
   .app .game-title {

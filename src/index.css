@@ -11,6 +11,7 @@
   --textColor: var(--white);
   --boardSquare: var(--white);
   --playerTextColor: var(--yellow);
+  --btnColor: var(--yellow); 
   /* Game Fonts */
   --gameFont: "Games", sans-serif;
   --xoFont: cursive;
